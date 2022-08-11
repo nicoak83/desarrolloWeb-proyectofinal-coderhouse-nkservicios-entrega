@@ -1,0 +1,306 @@
+/*MEDIA QUERIS PARA PAGINA NOSOTROS*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoIndex {
+    background-image: url(../../multimedia/imagen-21-1.jpg);
+    height: 600px; }
+    .encabezadoIndex .imagenLogo {
+      position: relative;
+      margin-top: 80px; }
+    .encabezadoIndex h1 {
+      font-size: 40px; }
+  .contenidoIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% auto auto auto auto;
+    grid-template-areas: "contenidoIndex__titulo" "parrafoNosotros1"  "imagen-27" "imagen-09";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 1700px; }
+    .contenidoIndex .contenidoIndex__titulo {
+      text-align: center;
+      font-size: 30px; }
+    .contenidoIndex .parrafoNosotros1 {
+      margin-right: 25px; }
+    .contenidoIndex .parrafoNosotros2 {
+      margin-right: 25px; }
+    .contenidoIndex .parrafoNosotros3 {
+      margin-right: 25px; } }
+
+/*ESTILOS PARA PAGINA NOSOTROS*/
+/*Encabezado*/
+.encabezadoIndex {
+  background-image: url(../../multimedia/imagen-21-1.jpg);
+  background-position: center;
+  height: 600px; }
+  .encabezadoIndex .imagenLogo {
+    position: relative;
+    margin-top: 80px; }
+  .encabezadoIndex h1 {
+    font-family: Helvetica;
+    font-size: 80px;
+    color: #e0d5d5; }
+
+/* Contenido */
+.contenidoIndex {
+  background-image: url(../../multimedia/imagen-37.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "contenidoIndex__titulo contenidoIndex__titulo contenidoIndex__titulo" "imagen-09 parrafoNosotros1 imagen-27";
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+  .contenidoIndex .contenidoIndex__titulo {
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-weight: bold;
+    grid-area: contenidoIndex__titulo;
+    margin-top: 20px;
+    color: lightseagreen; }
+  .contenidoIndex .parrafoNosotros1 {
+    grid-area: parrafoNosotros1;
+    padding: 3px 10px;
+    border: lightseagreen 1px solid;
+    font-family: Helvetica;
+    font-size: 17px;
+    text-align: left;
+    color: #e0d5d5; }
+  .contenidoIndex .imagen-09 {
+    transform: scale(1.4);
+    grid-area: imagen-09; }
+  .contenidoIndex .imagen-27 {
+    transform: scale(1.4);
+    grid-area: imagen-27; }
+  .contenidoIndex .imagen-26 {
+    transform: scale(0.1); }
+
+/*ESTILOS PARA PAGINA POLITICA DE CALIDAD*/
+.encabezadoPol {
+  background-image: url(../../multimedia/imagen-23.jpg);
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center; }
+  .encabezadoPol .imagenLogo {
+    display: flex;
+    margin-top: 80px; }
+  .encabezadoPol h1 {
+    font-family: Helvetica;
+    font-size: 70px;
+    text-align: center;
+    width: 100%;
+    color: #e0d5d5; }
+
+.contenidoPol {
+  height: 700px;
+  background-image: url(../../multimedia/imagen-37.jpg);
+  background-position: center;
+  background-size: cover; }
+  .contenidoPol .col {
+    color: #e0d5d5;
+    padding: 3px 10px;
+    border: lightseagreen 1px solid;
+    font-family: Helvetica;
+    font-size: 18px;
+    margin: 20px; }
+  .contenidoPol h1 {
+    text-align: center;
+    color: lightseagreen;
+    padding: 20px;
+    margin-bottom: 20px; }
+  .contenidoPol span {
+    color: #167edf; }
+  .contenidoPol .img-01 {
+    grid-template-areas: img-01; }
+  .contenidoPol .img-02 {
+    grid-template-areas: img-02; }
+  .contenidoPol .img-03 {
+    grid-template-areas: img-03; }
+
+/*ESTILOS PARA PAGINA SERVICIOS*/
+.encabezadoSer {
+  background-image: url(../../multimedia/imagen-35.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px; }
+  .encabezadoSer .imagenLogo {
+    position: relative;
+    margin-top: 80px; }
+  .encabezadoSer h1 {
+    font-family: Helvetica;
+    font-size: 80px;
+    color: #e0d5d5; }
+
+.contenidoSer {
+  background-image: url(../../multimedia/imagen-37.jpg);
+  background-position: center;
+  background-size: cover; }
+  .contenidoSer h1 {
+    color: lightseagreen;
+    padding: 20px;
+    margin-bottom: 20px; }
+  .contenidoSer .servicios {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    justify-items: center; }
+  .contenidoSer .video-contenedor {
+    position: relative;
+    padding-bottom: 70%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden; }
+  .contenidoSer .video-contenedor iframe {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/*MEDIA QUERIS PARA PAGINA NOSOTROS*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoIndex {
+    background-image: url(../../multimedia/imagen-21-1.jpg);
+    height: 600px; }
+    .encabezadoIndex .imagenLogo {
+      position: relative;
+      margin-top: 80px; }
+    .encabezadoIndex h1 {
+      font-size: 40px; }
+  .contenidoIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% auto auto auto auto;
+    grid-template-areas: "contenidoIndex__titulo" "parrafoNosotros1"  "imagen-27" "imagen-09";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 1700px; }
+    .contenidoIndex .contenidoIndex__titulo {
+      text-align: center;
+      font-size: 30px; }
+    .contenidoIndex .parrafoNosotros1 {
+      margin-right: 25px; }
+    .contenidoIndex .parrafoNosotros2 {
+      margin-right: 25px; }
+    .contenidoIndex .parrafoNosotros3 {
+      margin-right: 25px; } }
+
+/*ESTILOS PARA PAGINA NOSOTROS*/
+.encabezadoProd {
+  background-image: url(../../multimedia/imagen-38.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px; }
+  .encabezadoProd .imagenLogo {
+    position: relative;
+    margin-top: 80px; }
+  .encabezadoProd h1 {
+    font-family: Helvetica;
+    font-size: 80px;
+    color: #e0d5d5; }
+
+.contenidoProd {
+  background-image: url(../../multimedia/imagen-37.jpg);
+  background-position: center;
+  background-size: cover; }
+  .contenidoProd h1 {
+    color: lightseagreen;
+    padding: 20px;
+    margin-bottom: 20px; }
+
+/*ESTILOS PARA PAGINA CONTACTOS*/
+.encabezadoCon {
+  background-image: url(../../multimedia/imagen-39.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px; }
+  .encabezadoCon .imagenLogo {
+    position: relative;
+    margin-top: 80px; }
+  .encabezadoCon h1 {
+    font-family: Helvetica;
+    font-size: 80px;
+    color: #e0d5d5; }
+
+.contenidoCon {
+  background-image: url(../../multimedia/imagen-37.jpg);
+  background-position: center;
+  background-size: cover; }
+  .contenidoCon h1 {
+    text-align: center;
+    color: lightseagreen;
+    padding: 20px;
+    margin-bottom: 20px; }
+  .contenidoCon legend {
+    color: #e0d5d5;
+    padding: 20px; }
+  .contenidoCon label {
+    color: #e0d5d5;
+    padding: 20px; }
+
+/*ESTILOS PARA EL FOOTER*/
+footer {
+  background-color: black;
+  font-family: Helvetica;
+  color: #e0d5d5; }
+  footer ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  footer span {
+    color: red; }
+  footer .contactos {
+    padding: 5px;
+    background-color: #167edf;
+    background-clip: border-box;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #e0d5d5;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 30px; }
+
+/*MEDIA QUERIS PARA PAGINA NOSOTROS*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoIndex {
+    background-image: url(../../multimedia/imagen-21-1.jpg);
+    height: 600px; }
+    .encabezadoIndex .imagenLogo {
+      position: relative;
+      margin-top: 80px; }
+    .encabezadoIndex h1 {
+      font-size: 40px; }
+  .contenidoIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% auto auto auto auto;
+    grid-template-areas: "contenidoIndex__titulo" "parrafoNosotros1"  "imagen-27" "imagen-09";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 1700px; }
+    .contenidoIndex .contenidoIndex__titulo {
+      text-align: center;
+      font-size: 30px; }
+    .contenidoIndex .parrafoNosotros1 {
+      margin-right: 25px; }
+    .contenidoIndex .parrafoNosotros2 {
+      margin-right: 25px; }
+    .contenidoIndex .parrafoNosotros3 {
+      margin-right: 25px; } }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
