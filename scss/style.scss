@@ -1,0 +1,18 @@
+@import "utilities/index";
+@import "utilities/politica-de-calidad";
+@import "utilities/servicios";
+@import "utilities/productos";
+@import "utilities/contactos";
+@import "base/variables";
+@import "componentes/nav";
+@import "componentes/footer";
+@import "componentes/media-queris";
+@import "base/listas";
+@import "base/mixin";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}

@@ -32,11 +32,18 @@
 .encabezadoIndex {
   background-image: url(../../multimedia/imagen-21-1.jpg);
   background-position: center;
-  height: 600px; }
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
   .encabezadoIndex .imagenLogo {
     position: relative;
-    margin-top: 80px; }
+    top: 50px; }
   .encabezadoIndex h1 {
+    position: relative;
+    top: 100px;
+    text-align: center;
     font-family: Helvetica;
     font-size: 80px;
     color: #e0d5d5; }

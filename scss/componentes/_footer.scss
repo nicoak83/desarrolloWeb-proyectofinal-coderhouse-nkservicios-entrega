@@ -1,0 +1,30 @@
+
+@import "base/variables";
+
+/*ESTILOS PARA EL FOOTER*/
+
+footer{
+    background-color:$color-terciario;
+    font-family:$tipografia-principal;
+    color:$color-cuarto;
+
+    ul{
+        list-style: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    span{
+        color: red;
+    }
+    .contactos{
+    padding: 5px;
+    background-color:$color-secundario;
+    background-clip:border-box;
+    font-family:$tipografia-principal;
+    font-size: 25px;
+    color:$color-cuarto;
+    border-top-right-radius:  10px;
+    border-bottom-left-radius:  10px;
+    margin-bottom: 30px;
+    }
+}

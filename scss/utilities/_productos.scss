@@ -1,0 +1,33 @@
+@import "base/variables";
+@import "componentes/media-queris";
+@import "base/listas";
+@import "base/mixin";
+
+/*ESTILOS PARA PAGINA NOSOTROS*/
+.encabezadoProd{
+    background-image: url(../../multimedia/imagen-38.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    .imagenLogo{
+        position:relative;
+        margin-top: 80px;
+    }
+    h1{
+        font-family: $tipografia-principal;
+        font-size: 80px;
+        color: nth($list: $colores, $n:3);
+        
+    }
+}
+.contenidoProd{
+    background-image:url(../../multimedia/imagen-37.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    h1{
+        color: nth($list: $colores, $n:5);
+        padding: 20px; 
+        margin-bottom: 20px; 
+    }
+}

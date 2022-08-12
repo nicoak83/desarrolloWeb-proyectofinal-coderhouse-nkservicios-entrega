@@ -1,0 +1,65 @@
+@import "base/variables";
+@import "base/listas";
+@import "base/mixin";
+
+/*ESTILOS PARA PAGINA POLITICA DE CALIDAD*/
+
+.encabezadoPol{
+    background-image: url(../../multimedia/imagen-23.jpg);
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    .imagenLogo{
+        display:flex;
+        margin-top: 80px;
+    }
+    h1{
+        font-family: $tipografia-principal;
+        font-size: 70px;
+        text-align: center;
+        width: 100%;
+        color:nth($list: $colores, $n:3);
+    }
+}
+.contenidoPol{
+    height: 700px;
+    background-image:url(../../multimedia/imagen-37.jpg);
+    background-position: center;
+    background-size:cover;
+    .col{
+        color:nth($list: $colores, $n:3); ;
+        padding: 3px 10px;
+        border: lightseagreen 1px solid;
+        font-family: $tipografia-principal;
+        font-size: 18px;
+        margin: 20px
+    }
+    h1{
+        text-align: center;
+        color: nth($list: $colores, $n:5);
+        padding: 20px; 
+        margin-bottom: 20px; 
+
+    }
+    span{
+        color:nth($list: $colores, $n:1);
+    }
+    .img-01{
+        grid-template-areas: img-01;
+    }
+    .img-02{
+        grid-template-areas: img-02;
+    }
+    .img-03{
+        grid-template-areas: img-03;
+    }
+
+    
+
+}
+
+
+

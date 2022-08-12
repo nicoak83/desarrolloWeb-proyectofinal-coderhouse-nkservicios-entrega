@@ -1,0 +1,72 @@
+@import "base/variables";
+@import "componentes/media-queris";
+@import "base/listas";
+@import "base/mixin";
+
+/*ESTILOS PARA PAGINA NOSOTROS*/
+
+/*Encabezado*/
+
+.encabezadoIndex{
+    background-image: url(../../multimedia/imagen-21-1.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction:column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .imagenLogo{
+        position:relative;
+        top: 50px;
+    }
+    h1{
+        position:relative;
+        top: 100px;
+        text-align: center;
+        font-family: $tipografia-principal;
+        font-size: 80px;
+        color: nth($list: $colores, $n:3);
+    }
+}
+
+/* Contenido */
+
+.contenidoIndex{
+    background-image: url(../../multimedia/imagen-37.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    @include index;
+    .contenidoIndex__titulo{
+        text-align: left;
+        font-family:$tipografia-principal;
+        font-size: 40px;
+        font-weight: bold;
+        grid-area: contenidoIndex__titulo;
+        margin-top: 20px;
+        color: nth($list: $colores, $n:5);
+
+    }
+    .parrafoNosotros1{
+        grid-area: parrafoNosotros1;
+        padding: 3px 10px;
+        border: lightseagreen 1px solid;
+        font-family:$tipografia-principal;
+        font-size: 17px;
+        text-align:left;
+        color: nth($list: $colores, $n:3);  
+    }
+    .imagen-09{
+        transform:scale(1.4);
+        grid-area: imagen-09;
+    }
+    .imagen-27{
+        transform:scale(1.4);
+        grid-area: imagen-27;
+    }
+    .imagen-26{
+        transform: scale(0.1);
+    }
+}
+
+

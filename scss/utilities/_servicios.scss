@@ -1,0 +1,55 @@
+@import "base/variables";
+@import "base/listas";
+@import "base/mixin";
+
+/*ESTILOS PARA PAGINA SERVICIOS*/
+.encabezadoSer{
+    background-image: url(../../multimedia/imagen-35.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    .imagenLogo{
+        position:relative;
+        margin-top: 80px;
+    }
+    h1{
+        font-family: $tipografia-principal;
+        font-size: 80px;
+        color: nth($list: $colores, $n:3);
+        
+    }
+}
+.contenidoSer{
+    background-image:url(../../multimedia/imagen-37.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    h1{
+        color: nth($list: $colores, $n:5);
+        padding: 20px; 
+        margin-bottom: 20px; 
+    }
+    .servicios{
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        justify-items: center;
+    }
+    .video-contenedor{
+        position: relative;
+        padding-bottom:70%;
+        padding-top: 0px;
+        height: 0;
+        overflow: hidden;
+    }
+    .video-contenedor iframe{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        height:100% ;
+    }
+}

@@ -1,0 +1,36 @@
+@import "base/variables";
+@import "base/listas";
+@import "base/mixin";
+
+/*MEDIA QUERIS PARA PAGINA NOSOTROS*/
+@media screen and (min-width:320px) and (max-width:480px){
+    .encabezadoIndex{
+        background-image: url(../../multimedia/imagen-21-1.jpg);
+        height: 600px;
+        .imagenLogo{
+            position:relative;
+            margin-top: 80px;
+        }
+        h1{
+            font-size: 40px;
+        }
+    }
+    .contenidoIndex{
+        @include media-queris-index;
+        height: 1700px;
+        .contenidoIndex__titulo{
+            text-align: center;
+            font-size: 30px;
+        }
+        .parrafoNosotros1{
+            margin-right: 25px;
+        }
+        .parrafoNosotros2{
+            margin-right: 25px;
+        }
+        .parrafoNosotros3{
+            margin-right: 25px;
+        }
+    }
+    
+}
