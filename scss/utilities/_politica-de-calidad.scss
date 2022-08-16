@@ -7,25 +7,22 @@
 .encabezadoPol{
     background-image: url(../../multimedia/imagen-23.jpg);
     background-position: center;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+    @include flex;
     .imagenLogo{
-        display:flex;
-        margin-top: 80px;
+        position:relative;
+        top: 60px;
     }
     h1{
-        font-family: $tipografia-principal;
-        font-size: 70px;
+        position:relative;
+        top: 100px;
         text-align: center;
-        width: 100%;
-        color:nth($list: $colores, $n:3);
+        font-family:$tipografia-principal;
+        font-size: 80px;
+        color: nth($list: $colores, $n:3);
     }
 }
+
 .contenidoPol{
-    height: 700px;
     background-image:url(../../multimedia/imagen-37.jpg);
     background-position: center;
     background-size:cover;

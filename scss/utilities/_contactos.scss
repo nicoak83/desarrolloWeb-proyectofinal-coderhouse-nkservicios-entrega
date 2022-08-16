@@ -6,17 +6,18 @@
 .encabezadoCon{
     background-image: url(../../multimedia/imagen-39.jpg);
     background-position: center;
-    background-size: cover;
-    height: 600px;
+    @include flex;
     .imagenLogo{
         position:relative;
-        margin-top: 80px;
+        top: 60px;
     }
     h1{
-        font-family: $tipografia-principal;
+        position:relative;
+        top: 100px;
+        text-align: center;
+        font-family:$tipografia-principal;
         font-size: 80px;
         color: nth($list: $colores, $n:3);
-        
     }
 }
 .contenidoCon{

@@ -10,20 +10,16 @@
 .encabezadoIndex{
     background-image: url(../../multimedia/imagen-21-1.jpg);
     background-position: center;
-    display: flex;
-    flex-direction:column-reverse;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     .imagenLogo{
         position:relative;
-        top: 50px;
+        top: 60px;
     }
     h1{
         position:relative;
         top: 100px;
         text-align: center;
-        font-family: $tipografia-principal;
+        font-family:$tipografia-principal;
         font-size: 80px;
         color: nth($list: $colores, $n:3);
     }
@@ -35,7 +31,6 @@
     background-image: url(../../multimedia/imagen-37.jpg);
     background-position: center;
     background-size: cover;
-    height: 800px;
     @include index;
     .contenidoIndex__titulo{
         text-align: left;
@@ -63,9 +58,6 @@
     .imagen-27{
         transform:scale(1.4);
         grid-area: imagen-27;
-    }
-    .imagen-26{
-        transform: scale(0.1);
     }
 }
 

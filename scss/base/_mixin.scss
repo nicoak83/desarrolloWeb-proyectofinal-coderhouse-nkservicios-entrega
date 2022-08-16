@@ -1,3 +1,12 @@
+
+@mixin flex{
+    display: flex;
+    flex-direction:column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin index{
 display: grid;
     grid-template-columns: 35% 30% 35%;
@@ -11,8 +20,8 @@ display: grid;
 
 @mixin media-queris-index{
     display: grid;
-        grid-template-columns:100%;
-        grid-template-rows:5% auto auto auto auto;
+        grid-template-columns:auto;
+        grid-template-rows:auto auto auto auto;
         grid-template-areas: "contenidoIndex__titulo"
                              "parrafoNosotros1" 
                              "imagen-27"
@@ -21,3 +30,4 @@ display: grid;
         justify-items:center;
         align-items:center;
 }
+
