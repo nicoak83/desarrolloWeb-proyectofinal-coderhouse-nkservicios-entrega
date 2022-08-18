@@ -10,7 +10,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Productos</title>
+    <title>Contactos</title>
   </head>
 
   <body>
@@ -50,6 +50,7 @@
                 <a class="nav-link active" aria-current="page" href="contactos.html">Contactos</a>
               </li>
             </ul>
+            <a class="navbar-brand fs-6"><span class="material-symbols-outlined fs-6">call</span> 0054 11-6228-1936</a>
           </div>
         </div>
       </nav>
@@ -64,29 +65,33 @@
       </header>
  
       <main class="contenidoCon">
-        <h1 class="contenido__titulo--blanco">¿EN QUÉ PODEMOS AYUDARTE?</h1>
+        <h2 class="contenido__titulo--blanco animate__animated animate__bounceInLeft">- ¿EN QUÉ PODEMOS AYUDARTE? -</h2>
         <form action="" method=""></form>
-        <fieldset>
+        <fieldset class="formulario">
             <LEgend> Formulario de contacto </LEgend>
             <div>
-              <label for="Nombre">Completa tu nombre</label>
-              <input type="text" name="Nombre" placeholder="Completá con tu nombre">
+              <label for="Nombre">NOMBRE</label>
+              <input type="text" name="nombre" placeholder="Completá con tu nombre">
             </div>
             <div>
-              <label for="email">Completá tu email</label>
+              <label for="Apellido">APELLIDO</label>
+              <input type="text" name="apellido" placeholder="Completá con tu apellido">
+            </div>
+            <div>
+              <label for="email">CORREO</label>
               <input type="text" name="email" placeholder="Completá con tu email">
             </div>
             <div>
-              <label for="email">Completá tu celular</label>
-              <input type="text" name="email" placeholder="Completá con tu teléfono celular">
+              <label for="celular">TELÉFONO</label>
+              <input type="text" name="telefono" placeholder="Completá con tu teléfono celular">
             </div>
             <div>
-              <label for="Comentarios">Dejanos tu comentario</label>
-              <input class="contenido__comentarios" type="text" name="Comentarios" placeholder="Escribir comentarios" id="">
+              <label for="Comentarios">COMENTARIOS</label>
+              <input class="comentarios" type="text" name="comentarios" placeholder="Escribir comentarios" id="">
             </div>
             <div>
-              <input type="submit" value="Apreta para enviar">
-              <input type="reset" value="Borrar todo">
+              <input class="enviar" type="submit" value="Enviar">
+              <input class="borrar" type="reset" value="Borrar todo">
             </div>
             </fieldset>
       </main>

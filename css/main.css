@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*MEDIA QUERIS PARA PAGINA NOSOTROS*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .encabezadoIndex {
@@ -122,8 +123,27 @@
       transform: scale(1);
       grid-area: imagen-27; } }
 
+/* MEDIA QUERIS PARA PÁGINA POLITICA DE CALIDAD */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoPol h1 {
+    font-size: 50px; } }
+
+/* MEDIA QUERIS PARA PÁGINA SERVICIOS */
+.encabezadoSer h1 {
+  font-size: 50px; }
+
+/* MEDIA QUERIS PARA PÁGINA PRODUCTOS */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoProd h1 {
+    font-size: 50px; } }
+
+/* MEDIA QUERIS PARA PÁGINA CONTACTOS */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoCon h1 {
+    font-size: 50px; } }
+
 /*ESTILOS PARA PAGINA NOSOTROS*/
-/*Encabezado*/
+/*Estilo para el encabezado de la página*/
 .encabezadoIndex {
   background-image: url(../../multimedia/imagen-21-1.jpg);
   background-position: center;
@@ -143,22 +163,22 @@
     font-size: 80px;
     color: #e0d5d5; }
 
-/* Contenido */
+/*Estilo para el contenido de la página*/
 .contenidoIndex {
   background-image: url(../../multimedia/imagen-37.jpg);
   background-position: center;
   background-size: cover;
   display: grid;
-  grid-template-columns: 35% 30% 35%;
-  grid-template-rows: auto auto;
-  grid-template-areas: "contenidoIndex__titulo contenidoIndex__titulo contenidoIndex__titulo" "imagen-09 parrafoNosotros1 imagen-27";
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 20% 30% 50%;
+  grid-template-areas: "contenidoIndex__titulo imagen-27" "parrafoNosotros1 imagen-27" "parrafoNosotros1 imagen-09";
   justify-content: center;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  row-gap: 1px;
+  height: 100%; }
   .contenidoIndex .contenidoIndex__titulo {
-    text-align: left;
     font-family: Helvetica;
-    font-size: 40px;
     font-weight: bold;
     grid-area: contenidoIndex__titulo;
     margin-top: 20px;
@@ -169,16 +189,26 @@
     border: lightseagreen 1px solid;
     font-family: Helvetica;
     font-size: 17px;
-    text-align: left;
-    color: #e0d5d5; }
+    text-align: justify;
+    color: #e0d5d5;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .contenidoIndex span {
+    color: #167edf;
+    font-size: 40px; }
   .contenidoIndex .imagen-09 {
-    transform: scale(1.4);
-    grid-area: imagen-09; }
+    transform: scale(1);
+    grid-area: imagen-09;
+    padding: 3px 5px;
+    border: lightseagreen 1px solid; }
   .contenidoIndex .imagen-27 {
-    transform: scale(1.4);
-    grid-area: imagen-27; }
+    transform: scale(1);
+    grid-area: imagen-27;
+    padding: 3px 5px;
+    border: lightseagreen 1px solid; }
 
 /*ESTILOS PARA PAGINA POLITICA DE CALIDAD*/
+/*Estilo para el encabezado de la página*/
 .encabezadoPol {
   background-image: url(../../multimedia/imagen-23.jpg);
   background-position: center;
@@ -198,6 +228,7 @@
     font-size: 80px;
     color: #e0d5d5; }
 
+/*Estilo para el contenido de la página*/
 .contenidoPol {
   background-image: url(../../multimedia/imagen-37.jpg);
   background-position: center;
@@ -209,21 +240,15 @@
     font-family: Helvetica;
     font-size: 18px;
     margin: 20px; }
-  .contenidoPol h1 {
+  .contenidoPol h2 {
     text-align: center;
     color: lightseagreen;
-    padding: 20px;
-    margin-bottom: 20px; }
+    padding: 10px; }
   .contenidoPol span {
     color: #167edf; }
-  .contenidoPol .img-01 {
-    grid-template-areas: img-01; }
-  .contenidoPol .img-02 {
-    grid-template-areas: img-02; }
-  .contenidoPol .img-03 {
-    grid-template-areas: img-03; }
 
 /*ESTILOS PARA PAGINA SERVICIOS*/
+/*Estilo para el encabezado de la página*/
 .encabezadoSer {
   background-image: url(../../multimedia/image-44.jpg);
   background-position: center;
@@ -243,24 +268,26 @@
     font-size: 80px;
     color: #e0d5d5; }
 
+/*Estilo para el contenido de la página*/
 .contenidoSer {
   background-image: url(../../multimedia/imagen-37.jpg);
   background-position: center;
   background-size: cover; }
-  .contenidoSer h1 {
+  .contenidoSer h2 {
     color: lightseagreen;
-    padding: 20px;
-    margin-bottom: 20px; }
+    padding: 10px;
+    margin-bottom: 10px; }
   .contenidoSer .servicios {
     display: flex;
     column-gap: 20px;
+    row-gap: 20px;
     justify-content: center;
     justify-items: center; }
   .contenidoSer .video-contenedor {
     position: relative;
     padding-bottom: 70%;
     padding-top: 0px;
-    height: 0;
+    height: 0px;
     overflow: hidden; }
   .contenidoSer .video-contenedor iframe {
     display: flex;
@@ -396,7 +423,27 @@
       transform: scale(1);
       grid-area: imagen-27; } }
 
-/*ESTILOS PARA PAGINA NOSOTROS*/
+/* MEDIA QUERIS PARA PÁGINA POLITICA DE CALIDAD */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoPol h1 {
+    font-size: 50px; } }
+
+/* MEDIA QUERIS PARA PÁGINA SERVICIOS */
+.encabezadoSer h1 {
+  font-size: 50px; }
+
+/* MEDIA QUERIS PARA PÁGINA PRODUCTOS */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoProd h1 {
+    font-size: 50px; } }
+
+/* MEDIA QUERIS PARA PÁGINA CONTACTOS */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoCon h1 {
+    font-size: 50px; } }
+
+/*ESTILOS PARA PÁGINA PRODUCTOS*/
+/* Estilo para el encabezado de la página */
 .encabezadoProd {
   background-image: url(../../multimedia/imagen-38.jpg);
   background-position: center;
@@ -416,16 +463,18 @@
     font-size: 80px;
     color: #e0d5d5; }
 
+/* Estilo para el contenido de la página */
 .contenidoProd {
   background-image: url(../../multimedia/imagen-37.jpg);
   background-position: center;
   background-size: cover; }
-  .contenidoProd h1 {
+  .contenidoProd h2 {
     color: lightseagreen;
     padding: 20px;
     margin-bottom: 20px; }
 
 /*ESTILOS PARA PAGINA CONTACTOS*/
+/*Estilo para el encabezado de la página*/
 .encabezadoCon {
   background-image: url(../../multimedia/imagen-39.jpg);
   background-position: center;
@@ -445,33 +494,56 @@
     font-size: 80px;
     color: #e0d5d5; }
 
+/*Estilo para el contenido de la página*/
 .contenidoCon {
   background-image: url(../../multimedia/imagen-37.jpg);
   background-position: center;
   background-size: cover; }
-  .contenidoCon h1 {
+  .contenidoCon h2 {
     text-align: center;
     color: lightseagreen;
     padding: 20px;
     margin-bottom: 20px; }
   .contenidoCon legend {
-    color: #e0d5d5;
-    padding: 20px; }
+    color: #e0d5d5; }
   .contenidoCon label {
+    background-color: #167edf;
     color: #e0d5d5;
-    padding: 20px; }
+    padding: 10px;
+    border-radius: 3px; }
+  .contenidoCon input {
+    font-family: Helvetica; }
+  .contenidoCon .formulario {
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 5px;
+    margin-left: 50px; }
+  .contenidoCon .enviar {
+    font-family: Helvetica;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px; }
+  .contenidoCon .borrar {
+    font-family: Helvetica;
+    background-color: #ac0808;
+    padding: 10px;
+    border-radius: 5px; }
 
 /*ESTILOS PARA EL FOOTER*/
 footer {
   background-color: black;
   font-family: Helvetica;
-  color: #e0d5d5; }
+  color: #e0d5d5;
+  padding-top: 30px; }
   footer ul {
     list-style: none;
     margin-top: 20px;
     margin-bottom: 20px; }
   footer span {
-    color: red; }
+    color: #ac0808; }
   footer .contactos {
     padding: 5px;
     background-color: #167edf;
@@ -606,6 +678,25 @@ footer {
     .contenidoIndex .imagen-27 {
       transform: scale(1);
       grid-area: imagen-27; } }
+
+/* MEDIA QUERIS PARA PÁGINA POLITICA DE CALIDAD */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoPol h1 {
+    font-size: 50px; } }
+
+/* MEDIA QUERIS PARA PÁGINA SERVICIOS */
+.encabezadoSer h1 {
+  font-size: 50px; }
+
+/* MEDIA QUERIS PARA PÁGINA PRODUCTOS */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoProd h1 {
+    font-size: 50px; } }
+
+/* MEDIA QUERIS PARA PÁGINA CONTACTOS */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .encabezadoCon h1 {
+    font-size: 50px; } }
 
 * {
   padding: 0px;

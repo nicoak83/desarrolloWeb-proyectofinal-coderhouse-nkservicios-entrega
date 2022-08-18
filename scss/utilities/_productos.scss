@@ -3,7 +3,10 @@
 @import "base/listas";
 @import "base/mixin";
 
-/*ESTILOS PARA PAGINA NOSOTROS*/
+/*ESTILOS PARA PÁGINA PRODUCTOS*/
+
+/* Estilo para el encabezado de la página */
+
 .encabezadoProd{
     background-image: url(../../multimedia/imagen-38.jpg);
     background-position: center;
@@ -21,12 +24,15 @@
         color: nth($list: $colores, $n:3);
     }
 }
+
+/* Estilo para el contenido de la página */
+
 .contenidoProd{
     background-image:url(../../multimedia/imagen-37.jpg);
     background-position: center;
     background-size: cover;
     
-    h1{
+    h2{
         color: nth($list: $colores, $n:5);
         padding: 20px; 
         margin-bottom: 20px; 

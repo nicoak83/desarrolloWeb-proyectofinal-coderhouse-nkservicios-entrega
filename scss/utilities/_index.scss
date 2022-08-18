@@ -5,7 +5,7 @@
 
 /*ESTILOS PARA PAGINA NOSOTROS*/
 
-/*Encabezado*/
+/*Estilo para el encabezado de la página*/
 
 .encabezadoIndex{
     background-image: url(../../multimedia/imagen-21-1.jpg);
@@ -25,17 +25,17 @@
     }
 }
 
-/* Contenido */
+/*Estilo para el contenido de la página*/
 
 .contenidoIndex{
     background-image: url(../../multimedia/imagen-37.jpg);
     background-position: center;
     background-size: cover;
     @include index;
+    row-gap: 1px ;
+    height: 100%;
     .contenidoIndex__titulo{
-        text-align: left;
         font-family:$tipografia-principal;
-        font-size: 40px;
         font-weight: bold;
         grid-area: contenidoIndex__titulo;
         margin-top: 20px;
@@ -48,16 +48,27 @@
         border: lightseagreen 1px solid;
         font-family:$tipografia-principal;
         font-size: 17px;
-        text-align:left;
-        color: nth($list: $colores, $n:3);  
+        text-align:justify;
+        color: nth($list: $colores, $n:3);
+        margin-left: 20px;
+        margin-right: 20px;   
     }
+    span{
+        color: nth($list: $colores, $n:1);
+        font-size: 40px;
+    }  
+   
     .imagen-09{
-        transform:scale(1.4);
+        transform:scale(1);
         grid-area: imagen-09;
+        padding: 3px 5px;
+        border: lightseagreen 1px solid;
     }
     .imagen-27{
-        transform:scale(1.4);
+        transform:scale(1);
         grid-area: imagen-27;
+        padding: 3px 5px;
+        border: lightseagreen 1px solid;
     }
 }
 

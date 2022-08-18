@@ -9,10 +9,11 @@
 
 @mixin index{
 display: grid;
-    grid-template-columns: 35% 30% 35%;
-    grid-template-rows:auto auto ;
-    grid-template-areas: "contenidoIndex__titulo contenidoIndex__titulo contenidoIndex__titulo"
-                         "imagen-09 parrafoNosotros1 imagen-27";
+    grid-template-columns: 60% 40%;
+    grid-template-rows:20% 30% 50%;
+    grid-template-areas: "contenidoIndex__titulo imagen-27"
+                         "parrafoNosotros1 imagen-27"
+                         "parrafoNosotros1 imagen-09";
     justify-content:center;
     justify-items:center;
     align-items:center;

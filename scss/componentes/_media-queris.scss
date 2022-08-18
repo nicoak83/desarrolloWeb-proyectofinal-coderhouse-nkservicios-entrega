@@ -3,6 +3,7 @@
 @import "base/mixin";
 
 /*MEDIA QUERIS PARA PAGINA NOSOTROS*/
+
 @media screen and (min-width:320px) and (max-width:480px){
     .encabezadoIndex{
         background-image: url(../../multimedia/imagen-21-1.jpg);
@@ -97,7 +98,7 @@
             top: 100px;
             text-align: center;
             font-family:$tipografia-principal;
-            font-size: 50px;
+            font-size: $medida-3;
             color: nth($list: $colores, $n:3);
         }
     }
@@ -123,3 +124,47 @@
     }
     
 }
+
+/* MEDIA QUERIS PARA PÁGINA POLITICA DE CALIDAD */
+
+@media screen and (min-width:320px) and (max-width:480px){
+ 
+    .encabezadoPol{
+        h1{
+            font-size: $medida-3;
+        }
+    }
+
+}
+
+/* MEDIA QUERIS PARA PÁGINA SERVICIOS */
+
+.encabezadoSer{
+    h1{
+        font-size: $medida-3;
+    }
+}
+
+/* MEDIA QUERIS PARA PÁGINA PRODUCTOS */
+
+@media screen and (min-width:320px) and (max-width:480px){
+
+    .encabezadoProd{
+        h1{
+            font-size: $medida-3;
+        }
+    }
+
+}
+
+/* MEDIA QUERIS PARA PÁGINA CONTACTOS */
+
+@media screen and (min-width:320px) and (max-width:480px){
+
+    .encabezadoCon{
+        h1{
+            font-size: $medida-3;
+        }
+    }
+}
+

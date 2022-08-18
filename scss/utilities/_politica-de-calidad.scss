@@ -4,6 +4,8 @@
 
 /*ESTILOS PARA PAGINA POLITICA DE CALIDAD*/
 
+/*Estilo para el encabezado de la página*/
+
 .encabezadoPol{
     background-image: url(../../multimedia/imagen-23.jpg);
     background-position: center;
@@ -22,40 +24,31 @@
     }
 }
 
+/*Estilo para el contenido de la página*/
+
 .contenidoPol{
     background-image:url(../../multimedia/imagen-37.jpg);
     background-position: center;
     background-size:cover;
+
     .col{
         color:nth($list: $colores, $n:3); ;
         padding: 3px 10px;
         border: lightseagreen 1px solid;
         font-family: $tipografia-principal;
         font-size: 18px;
-        margin: 20px
+        margin: 20px;
+        
     }
-    h1{
-        text-align: center;
+    h2{
+        text-align:center;
         color: nth($list: $colores, $n:5);
-        padding: 20px; 
-        margin-bottom: 20px; 
+        padding: $medida-1;
 
     }
     span{
         color:nth($list: $colores, $n:1);
     }
-    .img-01{
-        grid-template-areas: img-01;
-    }
-    .img-02{
-        grid-template-areas: img-02;
-    }
-    .img-03{
-        grid-template-areas: img-03;
-    }
-
-    
-
 }
 
 

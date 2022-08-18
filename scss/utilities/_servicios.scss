@@ -3,6 +3,9 @@
 @import "base/mixin";
 
 /*ESTILOS PARA PAGINA SERVICIOS*/
+
+/*Estilo para el encabezado de la página*/
+
 .encabezadoSer{
     background-image: url(../../multimedia/image-44.jpg);
     background-position: center;
@@ -20,27 +23,32 @@
         color: nth($list: $colores, $n:3);
     }
 }
+
+/*Estilo para el contenido de la página*/
+
 .contenidoSer{
     background-image:url(../../multimedia/imagen-37.jpg);
     background-position: center;
     background-size: cover;
     
-    h1{
+    h2{
         color: nth($list: $colores, $n:5);
-        padding: 20px; 
-        margin-bottom: 20px; 
+        padding: $medida-1; 
+        margin-bottom:$medida-1; 
     }
     .servicios{
         display: flex;
         column-gap: 20px;
+        row-gap: 20px;
         justify-content: center;
         justify-items: center;
     }
+
     .video-contenedor{
         position: relative;
         padding-bottom:70%;
         padding-top: 0px;
-        height: 0;
+        height: 0px;
         overflow: hidden;
     }
     .video-contenedor iframe{

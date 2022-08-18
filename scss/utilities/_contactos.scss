@@ -3,6 +3,9 @@
 @import "base/mixin";
 
 /*ESTILOS PARA PAGINA CONTACTOS*/
+
+/*Estilo para el encabezado de la página*/
+
 .encabezadoCon{
     background-image: url(../../multimedia/imagen-39.jpg);
     background-position: center;
@@ -20,11 +23,14 @@
         color: nth($list: $colores, $n:3);
     }
 }
+
+/*Estilo para el contenido de la página*/
+
 .contenidoCon{
     background-image: url(../../multimedia/imagen-37.jpg);
     background-position: center;
     background-size: cover;
-    h1{
+    h2{
         text-align: center;
         color: nth($list: $colores, $n:5);
         padding: 20px; 
@@ -32,11 +38,36 @@
     }
     legend{
         color: nth($list: $colores, $n:3);
-        padding: 20px; 
     }
     label{
+        background-color:nth($list: $colores, $n:1) ;
         color: nth($list: $colores, $n:3);
-        padding: 20px; 
+        padding: $medida-1;
+        border-radius: 3px;
+    }
+    input{
+        font-family:$tipografia-principal;
+    }
+    .formulario{
+        font-family: $tipografia-principal;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        justify-items: center;
+        row-gap: 5px;
+        margin-left: 50px;
+    }
+    .enviar{
+        font-family:$tipografia-principal;
+        background-color:nth($list: $colores, $n:6);
+        padding: $medida-1;
+        border-radius: 5px;
+    }
+    .borrar{
+        font-family:$tipografia-principal;
+        background-color:nth($list: $colores, $n:4);
+        padding: $medida-1;
+        border-radius: 5px;
     }
 
 }
