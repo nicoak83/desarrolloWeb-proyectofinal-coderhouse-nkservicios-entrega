@@ -21,14 +21,36 @@ display: grid;
 
 @mixin media-queris-index{
     display: grid;
-        grid-template-columns:auto;
-        grid-template-rows:auto auto auto auto;
-        grid-template-areas: "contenidoIndex__titulo"
+    grid-template-columns:auto;
+    grid-template-rows:auto auto auto auto;
+    grid-template-areas: "contenidoIndex__titulo"
                              "parrafoNosotros1" 
                              "imagen-27"
                              "imagen-09";
-        justify-content:center;
-        justify-items:center;
-        align-items:center;
+    justify-content:center;
+    justify-items:center;
+    align-items:center;
 }
 
+@mixin contacto{
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows:auto auto;
+    grid-template-areas: "contenidoCon__titulo contenidoCon__titulo contenidoCon__titulo"   
+                             "formulario mapa direccion";
+    justify-content:space-around;
+    justify-items:center; 
+    align-items:flex-start;
+}
+
+@mixin media-queris-contacto{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto auto auto;
+    grid-template-areas: "contenidoCon__titulo"
+                         "formulario" 
+                         "mapa";
+    justify-content:center;
+    justify-items:center; 
+    align-items:center;
+}

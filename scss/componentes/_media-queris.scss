@@ -168,3 +168,29 @@
     }
 }
 
+@media screen and (min-width:320px) and (max-width:480px){
+    .contenidoCon{
+        @include media-queris-contacto;
+        row-gap: 10px;
+        .direccion{
+            display: none;
+        }
+        .formulario{
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .contenidoCon{
+        @include media-queris-contacto;
+        row-gap: 10px;
+        .direccion{
+            display: none;
+        }
+    }
+}
+
+
+
+

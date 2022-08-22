@@ -30,14 +30,17 @@
     background-image: url(../../multimedia/imagen-37.jpg);
     background-position: center;
     background-size: cover;
-    h2{
+    @include contacto;
+    .contenidoCon__titulo{
         text-align: center;
         color: nth($list: $colores, $n:5);
         padding: 20px; 
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
+        grid-area: contenidoCon__titulo; 
     }
     legend{
-        color: nth($list: $colores, $n:3);
+        color: nth($list: $colores, $n:5);
+        font-size: 30px;
     }
     label{
         background-color:nth($list: $colores, $n:1) ;
@@ -55,19 +58,39 @@
         justify-content:center;
         justify-items: center;
         row-gap: 5px;
-        margin-left: 50px;
+        grid-area: formulario;
+        margin-left: 30px;
     }
     .enviar{
         font-family:$tipografia-principal;
-        background-color:nth($list: $colores, $n:6);
+        background-color:nth($list: $colores, $n:3);
         padding: $medida-1;
         border-radius: 5px;
     }
     .borrar{
         font-family:$tipografia-principal;
-        background-color:nth($list: $colores, $n:4);
+        background-color:nth($list: $colores, $n:3);
         padding: $medida-1;
         border-radius: 5px;
+    }
+    .mapa{
+        grid-area: mapa;
+    }
+    
+    .direccion{
+       font-family:$tipografia-principal;
+       grid-area: direccion;
+       margin-right: 30px;
+       color: nth($list: $colores, $n:3);
+       .direccion-tit{
+        font-family:$tipografia-principal;
+        color: nth($list: $colores, $n:5);
+        text-align:left;
+        }
+       ul{
+        text-align:left;
+        list-style: none;
+       }
     }
 
 }
